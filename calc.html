@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Own Calc</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: cornflowerblue;
+            font-size:xx-large;
+            font-weight: 200;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+    <main>
+        <section>
+            <input type="number" value="0" id="counter" readonly>
+            <br>
+            <br>
+            <div id="counterButtons">
+                <button onClick = calc()>9</button>
+                <button onClick = calc()>8</button>
+                <button onClick = calc()>7</button>
+                <button onClick = calc()>+</button>
+                <br>
+                <button onClick = calc()>6</button>
+                <button onClick = calc()>5</button>
+                <button onClick = calc()>4</button>
+                <button onClick = calc()>-</button>
+                <br>
+                <button onClick = calc()>3</button>
+                <button onClick = calc()>2</button>
+                <button onClick = calc()>1</button>
+                <button onClick = calc()>*</button>
+                <br>
+                <!-- <button onClick = calc()>00</button> -->
+                <button onClick = calc()>.</button>
+                <button onClick = calc()>0</button>
+                <button onClick = calc()>AC</button>
+                <button onClick = calc()>/</button>
+            </div>
+        </section>
+        <section id="output">
+        </section>
+    </main>
+
+    <script src="calc.js"></script>
+</body>
+</html>
