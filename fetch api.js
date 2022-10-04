@@ -1,17 +1,20 @@
 
-
+function getUsers(){
 axios.get("https://reqres.in/api/users")
     .then(res => console.log(res))
     .catch(err => console.erroe(err));
-
+}
 // get = read , pulling the info 
+console.log("yo!!");
+
+function createUser(){ 
 axios.post("https://reqres.in/api/users", {
     "name": "morpheus",
     "job": "leader"
 })
     .then(res => console.log(res))
     .catch(err => console.erroe(err));
-
+}
 axios.post("https://reqres.in/api/users", {
     "email": "eve.holt@reqres.inheus",
     "password": "pistol"
